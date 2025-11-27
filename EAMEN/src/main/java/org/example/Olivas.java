@@ -10,7 +10,9 @@ public class Olivas {
         int ancho=0;
         int alto=0;
 
-        System.out.println("BIENVENIDO A OLIVEMARO");
+        System.out.println("╔========================╗");
+        System.out.println("║ BIENVENIDO A OLIVEMARO ║");
+        System.out.println("╚========================╝");
 
             try {
                 System.out.print("ELIGE TU ANCHO: ");
@@ -22,7 +24,9 @@ public class Olivas {
 
             }
 
-
+        System.out.println("╔==========================================╗");
+        System.out.println("║ TU CAMPO SERA DE "+alto+" X "+ancho+"                   ║");
+        System.out.println("╚==========================================╝");
 
         String matriz[][] = new String[alto][ancho];
 
@@ -50,9 +54,10 @@ public class Olivas {
 
 
         for (String[] tabla:matriz){
-            System.out.println(Arrays.toString(matriz));
+            System.out.println(Arrays.toString(tabla));
         }
-        
+
+
 
 
 
