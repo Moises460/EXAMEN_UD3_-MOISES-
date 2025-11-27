@@ -14,15 +14,22 @@ public class Olivas {
         System.out.println("║ BIENVENIDO A OLIVEMARO ║");
         System.out.println("╚========================╝");
 
+        boolean validar=true;
+        do {
             try {
                 System.out.print("ELIGE TU ANCHO: ");
                 ancho = Integer.parseInt(tc.nextLine());
                 System.out.print("ELIGE TU ALTO: ");
                 alto = Integer.parseInt(tc.nextLine());
+
+                validar=true;
             } catch (NumberFormatException e) {
                 System.out.println("SOLO SE ADMITEN NÚMEROS");
-
+                 validar=false;
             }
+
+        }while (!validar==true);
+
 
         System.out.println("╔==========================================╗");
         System.out.println("║ TU CAMPO SERA DE "+alto+" X "+ancho+"                   ║");
